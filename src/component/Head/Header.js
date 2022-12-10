@@ -1,6 +1,9 @@
 import React, { useState } from "react"
 import "./header.css"
 import {FaBars} from "react-icons/fa"
+import Pdf from "react-to-pdf"
+
+const ref = React.createRef();
 
 const Header = () => {
   // fixed Header
@@ -45,7 +48,10 @@ const Header = () => {
                 <a href='#contact'>contact</a>
               </li>
               <li>
-                <button className='home-btn'>Download Resume</button>
+                <Pdf targetRef={ref} filename="code-example.pdf">
+                {({ toPdf }) => <a href="MD. SUMON Resume.pdf"  download="Resume MD. SUMON Resume.pdf" onClick={toPdf} variant="primary" size="sm" className="ms-2 home-btn">Download RESUME</a>}
+                
+                </Pdf>
               </li>
             </ul>
 
