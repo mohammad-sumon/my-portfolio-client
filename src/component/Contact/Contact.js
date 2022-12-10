@@ -1,6 +1,7 @@
 import React, { useState } from "react"
-import contact1 from "./contact1.png"
+import contact1 from "./contact2.jpg"
 import "./Contact.css"
+import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa"
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -45,24 +46,24 @@ const Contact = () => {
             <div className='left'>
               <div className='box box_shodow'>
                 <div className='img'>
-                  <img src={contact1} alt='' />
+                  <img src={contact1} alt='' style={{width: "400px"}} />
                 </div>
                 <div className='details'>
-                  <h1>Nevine Acotanza</h1>
-                  <p>Chief Operating Officer</p>
-                  <p>I am available for freelance work. Connect with me via and call in to my account.</p> <br />
-                  <p>Phone: +01234567890</p>
-                  <p>Email: admin@example.com</p> <br />
+                  <h1>Md. Sumon</h1>
+                  <p>Front-End Web Developer</p>
+                  <p>Please feel free to contact with me. Connect with me via and call in to my account.</p> <br />
+                  <p>Phone: +880 16111 56780</p>
+                  <p>Email: sumon3011@gmail.com</p> <br />
                   <span>FIND WITH ME</span>
                   <div className='button f_flex'>
                     <button className='btn_shadow'>
-                      <i className='fab fa-facebook-f'></i>
+                      <FaFacebook></FaFacebook>
                     </button>
                     <button className='btn_shadow'>
-                      <i className='fab fa-instagram'></i>
+                      <FaInstagram></FaInstagram>
                     </button>
                     <button className='btn_shadow'>
-                      <i className='fab fa-twitter'></i>
+                      <FaLinkedin></FaLinkedin>
                     </button>
                   </div>
                 </div>
