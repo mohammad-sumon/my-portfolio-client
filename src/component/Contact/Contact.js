@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import contact1 from "./contact2.jpg"
 import "./Contact.css"
 import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa"
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -21,9 +23,19 @@ const Contact = () => {
       }
     })
   }
+  const form = useRef();
 
   const formSubmit = (event) => {
-    event.preventDefault()
+    
+    event.preventDefault();
+    emailjs.sendForm('service_kfp8fqd', 'template_q9ukzza', form.current, 'kcg6GYtARzLDBv0hF')
+      .then((result) => {
+          console.log(result.text);
+          // console.log('test message ok');
+          // setData();
+      }, (error) => {
+          console.log(error.text);
+      });
     alert(
       `My name is ${data.fullname}. 
 	My phone number is ${data.phone}. 
@@ -71,7 +83,7 @@ const Contact = () => {
             </div>
 
             <div className='right box_shodow'>
-              <form onSubmit={formSubmit}>
+              <form ref={form} onSubmit={formSubmit}>
                 <div className='f_flex'>
                   <div className='input row'>
                     <span>YOUR NAME</span>
@@ -94,7 +106,7 @@ const Contact = () => {
                   <span>YOUR MESSAGE </span>
                   <textarea cols='30' rows='10' name='message' value={data.message} onChange={InputEvent}></textarea>
                 </div>
-                <button className='btn_shadow'>
+                <button type="submit" className='btn_shadow'>
                   SEND MESSAGE <i className='fa fa-long-arrow-right'></i>
                 </button>
               </form>
