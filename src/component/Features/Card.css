@@ -1,4 +1,4 @@
-.box img{
+.boxs img{
     width: 100%;
 }
 .explore_btn{
@@ -13,17 +13,17 @@
     background-color: orange;
     color: white;
 }
+.card_container{
+    text-align: center;
+    margin-top: 30px;
+}
 
 
 @media (max-width: 768px) {
-    /* .card_container{
-        border: 2px solid black;
+    .card_container{
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(1fr);
-    } */
-    .box{
-      /* border: 2px solid seagreen; */
-      width: 100%;
+        grid-template-columns: repeat(1, 1fr);
     }
     
 }

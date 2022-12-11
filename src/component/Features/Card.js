@@ -7,7 +7,7 @@ const Card = (props) => {
   console.log(props);
   return (
     <div className="card_container">
-      <div className="box btn_shadow">
+      <div className="boxs btn_shadow">
         <img src={props.image} alt="" />
         <h2>{props.title}</h2>
         <p>{props.desc}</p>

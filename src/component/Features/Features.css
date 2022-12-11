@@ -23,16 +23,13 @@
 }
 
 .contents{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 6;
+  display: flex;
+  margin: 10px;
 }
 
 @media (max-width: 768px) {
   .contents{
-    /* border: 2px solid red; */
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1fr, 1fr, 1fr);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   }
 }

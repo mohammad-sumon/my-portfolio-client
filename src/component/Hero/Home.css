@@ -1,6 +1,7 @@
 .hero {
   /* position: relative; */
   width: 100%;
+  display: flex;
 }
 .hero h3 {
   font-weight: 100;
@@ -81,9 +82,8 @@
     margin-left: 20px;
   }
   .hero{
-    display: block;
-    width: 100%;
-    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr;
   }
   .hero .f_flex {
     flex-direction: column;
