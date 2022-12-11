@@ -1,45 +1,44 @@
-import React from "react"
-import "./Portfolio.css"
-import Card from "./Card"
-import Portfolio_data from "./Portfolio_data"
+import React from "react";
+import "./Portfolio.css";
+import myPic2 from "../../component/pic/sumon2.jpg";
+import Card from "./Card";
+import Portfolio_data from "./Portfolio_data";
 
 const Portfolio = () => {
   return (
     <>
-      <section className='Portfolio top' id='portfolio'>
-        <div className='container'>
-          <div className='heading text-center '>
-            <h4>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4>
-            <h1>My Portfolio</h1>
+      <section className="Portfolio top" id="aboutme">
+        <div className="container">
+          <div className="heading text-center ">
+            {/* <h4>VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK</h4> */}
+            <h1>About Me</h1>
           </div>
-
-          <div className='content grid'>
-            {Portfolio_data.map((value, index) => {
-              return <Card key={index} image={value.image} category={value.category} totalLike={value.totalLike} title={value.title} />
-            })}
-
-            {/*<div className='box btn_shadow '>
-              <div className='img'>
-                  <img src='https://rainbowit.net/html/inbio/assets/images/portfolio/portfolio-01.jpg' alt='' />
-              </div>
-              <div className='category d_flex'>
-                  <span>Development</span>
-                  <label>
-                    <i className='far fa-heart'></i> 360
-                  </label>
-              </div>
-              <div className='title'>
-                  <h2>Mobile app landing design & Services</h2>
-                <a href='' className='arrow'>
-                  <i class='fas fa-arrow-right'></i>
-                </a>
-              </div>
-            </div>*/}
+          <div className="myAbout">
+            <div className="myPic">
+              <img src={myPic2} alt="mypic2" />
+            </div>
+            <div className="myPara">
+              <p>
+                Hello, This is Md. Sumon. I belong from Dhaka, Bangladesh. From
+                my childhood i have a huge interest on tehcnologies. From the
+                beginning of the learning coding, I realize that this will be my
+                passion. Patience is my main motto.
+              </p>
+              <p>
+                As a passionate developer, I always like to invent new
+                technologies which are relevant to web development. I consider
+                myself a quick learner, self-motivated, responsible,
+                disciplined-oriented person who can work under pressure.
+                Although I am a student of Economics at Jagannath University, I
+                came to the development section because of my passion for
+                coding.
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

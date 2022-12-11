@@ -4,6 +4,7 @@ import Features from "../component/Features/Features";
 import Footer from "../component/Footer";
 import Header from "../component/Head/Header";
 import Home from "../component/Hero/Home";
+import Portfolio from "../component/Portfolio/Portfolio";
 import Resume from "../component/Resume/Resume";
 
 const Main = () => {
@@ -12,11 +13,11 @@ const Main = () => {
       <Header />
       <Home />
       <Features />
-      {/* <Portfolio /> */}
       <Resume />
       {/* <Testimonial /> */}
       {/* <Blog /> */}
       <Contact />
+      <Portfolio />
       <Footer />
     </div>
   );

@@ -1,4 +1,28 @@
-.Portfolio {
+.myAbout{
+  display: flex;
+}
+
+.myPic img{
+  border-radius: 10px;
+} 
+.myPara{
+  padding: 10px;
+}
+.myPara p{
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .myAbout{
+   display: grid;
+   grid-template-rows: 1fr;
+  }  
+}
+
+
+
+
+/* .Portfolio {
   position: relative;
 }
 .Portfolio .box {
@@ -57,7 +81,7 @@
   color: black;
 }
 /*------------popup--------*/
-body.active-modal {
+/* body.active-modal {
   overflow-y: hidden;
 }
 
@@ -133,7 +157,7 @@ body.active-modal {
   margin: 0;
 }
 /*------------popup--------*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .modal,
   .overlay {
     overflow: scroll;
@@ -149,4 +173,4 @@ body.active-modal {
   .modal .left {
     padding: 0;
   }
-}
+} */

@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./header.css"
 import {FaBars} from "react-icons/fa"
 import Pdf from "react-to-pdf"
+import { Link } from "react-router-dom";
 
 const ref = React.createRef();
 
@@ -29,21 +30,21 @@ const Header = () => {
               </li>
               <li>
                 <a href='#features'>projects</a>
-              </li>
-              {/* <li>
-                <a href='#portfolio'>portfolio</a>
-              </li> */}
+              </li>  
               <li>
                 <a href='#resume'>resume</a>
               </li>
               {/* <li>
                 <a href='#clients'>clients</a>
-              </li>
-              <li>
-                <a href='#blog'>blog</a>
               </li> */}
               <li>
+                <Link to='/blog'>blog</Link>
+              </li>
+              <li>
                 <a href='#contact'>contact</a>
+              </li>
+              <li>
+                <a href='#aboutme'>about me</a>
               </li>
               <li>
                 <Pdf targetRef={ref} filename="code-example.pdf">
