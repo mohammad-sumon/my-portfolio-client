@@ -79,15 +79,21 @@ const Contact = () => {
                   <p>Email: sumon3011@gmail.com</p> <br />
                   <span>FIND WITH ME</span>
                   <div className="button f_flex">
-                    <button className="btn_shadow">
+                  <button className="btn_shadow">
+                    <a href="https://www.facebook.com/sumon0204/">
                       <FaFacebook></FaFacebook>
-                    </button>
-                    <button className="btn_shadow">
+                    </a>
+                  </button>
+                  <button className="btn_shadow">
+                    <a href="https://www.instagram.com/sumon0204/">
                       <FaInstagram></FaInstagram>
-                    </button>
-                    <button className="btn_shadow">
+                    </a>
+                  </button>
+                  <button className="btn_shadow">
+                    <a href="https://www.linkedin.com/in/md-sumon-/">
                       <FaLinkedin></FaLinkedin>
-                    </button>
+                    </a>
+                  </button>
                   </div>
                 </div>
               </div>

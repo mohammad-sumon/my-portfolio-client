@@ -1,18 +1,19 @@
-import React from "react"
-import "./Home.css"
-import hero from "../pic/sumon.jpg"
+import React from "react";
+import "./Home.css";
+import hero from "../pic/sumon.jpg";
 // import skill1 from "../pic/skill1.png"
 // import skill2 from "../pic/skill2.png"
 // import skill3 from "../pic/skill3.png"
-import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 // import { Typewriter } from "react-simple-typewriter"
 
 const Home = () => {
   return (
     <>
-      <section className='hero' id='home'>
-        <div className='container f_flex top'>
-          <div className='left top'>
+      <section className="hero" id="home">
+        <div className="container f_flex top">
+          <div className="left top">
             <h3>WELCOME TO MY PORTFOLIO</h3>
             <h1>
               Hi, I'm <span>Md. Sumon</span>
@@ -24,20 +25,30 @@ const Home = () => {
               </span>
             </h2>
 
-            <p>I am a Front-End Web Developer. You can find lot of responsive projects with the latest technologies. Coding is my passion. You also can connect with me in different ways.</p>
+            <p>
+              I am a Front-End Web Developer. You can find lot of responsive
+              projects with the latest technologies. Coding is my passion. You
+              also can connect with me in different ways.
+            </p>
 
-            <div className='hero_btn d_flex'>
-              <div className='col_1'>
+            <div className="hero_btn d_flex">
+              <div className="col_1">
                 <h4>FIND WITH ME</h4>
-                <div className='button'>
-                  <button className='btn_shadow'>
-                    <FaFacebook></FaFacebook>
+                <div className="button">
+                  <button className="btn_shadow">
+                    <a href="https://www.facebook.com/sumon0204/">
+                      <FaFacebook></FaFacebook>
+                    </a>
                   </button>
-                  <button className='btn_shadow'>
-                    <FaInstagram></FaInstagram>
+                  <button className="btn_shadow">
+                    <a href="https://www.instagram.com/sumon0204/">
+                      <FaInstagram></FaInstagram>
+                    </a>
                   </button>
-                  <button className='btn_shadow'>
-                    <FaLinkedin></FaLinkedin>
+                  <button className="btn_shadow">
+                    <a href="https://www.linkedin.com/in/md-sumon-/">
+                      <FaLinkedin></FaLinkedin>
+                    </a>
                   </button>
                 </div>
               </div>
@@ -55,15 +66,15 @@ const Home = () => {
               </div> */}
             </div>
           </div>
-          <div className='right'>
-            <div className='right_img'>
-              <img src={hero} alt='' />
+          <div className="right">
+            <div className="right_img">
+              <img src={hero} alt="" />
             </div>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
