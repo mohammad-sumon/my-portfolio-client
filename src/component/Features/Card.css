@@ -1,0 +1,29 @@
+.box img{
+    width: 100%;
+}
+.explore_btn{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    cursor: pointer;
+}
+
+.explore_btn:hover{
+    background-color: orange;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    /* .card_container{
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    } */
+    .box{
+      /* border: 2px solid seagreen; */
+      width: 100%;
+    }
+    
+}

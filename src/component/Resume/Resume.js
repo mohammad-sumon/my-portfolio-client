@@ -1,7 +1,8 @@
 import React from "react"
 import "./Resume.css"
 import ResumeApi from "./ResumeApi"
-import Card from "./Card"
+import Card from "./ResumeCard"
+import ResumeCard from "./ResumeCard"
 
 const Resume = () => {
   return (
@@ -23,7 +24,7 @@ const Resume = () => {
               <div className='content'>
                 {ResumeApi.map((val, id) => {
                   if (val.category === "education") {
-                    return <Card key={id} title={val.title} year={val.year} rate={val.rate} desc={val.desc} />
+                    return <ResumeCard key={id} title={val.title} year={val.year} rate={val.rate} desc={val.desc} />
                   }
                 })}
 
@@ -51,7 +52,7 @@ const Resume = () => {
               <div className='content'>
                 {ResumeApi.map((val, index) => {
                   if (val.category === "experience") {
-                    return <Card key={index} title={val.title} year={val.year} rate={val.rate} desc={val.desc} />
+                    return <ResumeCard key={index} title={val.title} year={val.year} rate={val.rate} desc={val.desc} />
                   }
                 })}
               </div>

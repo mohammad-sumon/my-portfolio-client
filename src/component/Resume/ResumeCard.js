@@ -1,6 +1,6 @@
 import React from "react"
 
-const Card = (props) => {
+const ResumeCard = (props) => {
   return (
     <>
       <div className='box btn_shadow'>
@@ -20,4 +20,4 @@ const Card = (props) => {
   )
 }
 
-export default Card
+export default ResumeCard

@@ -55,8 +55,8 @@ button {
   box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
 }
 .btn_shadow:hover {
-  background: #fb8600;
-  color: white;
+  /* background: #fb8600; */
+  color: black;
   transform: translateY(-10px);
 }
 .box_shodow {
@@ -84,17 +84,17 @@ button {
   font-weight: 400;
 }
 .heading h1 {
-  font-size: 60px;
+  font-size: 40px;
   color: #3c3e41;
 }
 h1 {
   color: #3c3e41;
 }
-.grid {
+/* .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 35px;
-}
+} */
 p {
   color: #3c3e41;
 }
@@ -121,7 +121,7 @@ footer p {
   margin-top: 30px;
 }
 /*----------Footer---------*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -129,4 +129,4 @@ footer p {
   .right {
     width: 100%;
   }
-}
+} */

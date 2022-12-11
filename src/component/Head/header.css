@@ -3,7 +3,7 @@ header {
   line-height: 10vh;
 }
 header .container {
-  padding-top: 15px;
+  padding-top: 2px;
 }
 header ul li {
   margin-left: 30px;
@@ -18,7 +18,7 @@ header ul li a:hover {
   color: #fb8600;
 }
 .home-btn {
-  padding: 18px 25px;
+  padding: 10px 15px;
   border-radius: 6px;
   transition: 0.3s all ease;
   cursor: pointer;
@@ -75,7 +75,7 @@ header ul li a:hover {
   .close,
   .open {
     position: absolute;
-    top: 35px;
+    top: 15px;
     right: 20px;
     color: #fb8600;
     display: block;

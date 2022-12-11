@@ -3,7 +3,10 @@ import React from "react"
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer style={{
+        marginTop: "30px",
+        marginBottom: "30px"
+      }}>
         <div className='conatiner text-center top'>
          
           <p>© 2022. All rights reserved by Mohammad Sumon.</p>

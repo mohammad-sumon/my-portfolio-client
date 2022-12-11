@@ -15,9 +15,24 @@
   opacity: 0;
 }
 .features .box:hover p {
-  color: white;
+  color: black;
 }
 .features .box:hover i {
-  color: white;
+  color: black;
   opacity: 1;
+}
+
+.contents{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6;
+}
+
+@media (max-width: 768px) {
+  .contents{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr, 1fr);
+  }
 }
