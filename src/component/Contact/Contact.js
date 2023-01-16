@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import contact1 from "./contact2.jpg";
+// import contact1 from "./contact2.jpg";
+import contact1 from "../pic/contact-us.gif";
 import "./Contact.css";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { useRef } from "react";
@@ -75,7 +76,7 @@ const Contact = () => {
                     call in to my account.
                   </p>{" "}
                   <br />
-                  <p>Phone: +880 16111 56780</p>
+                  <p>Whatsapp: +880 16111 56780</p>
                   <p>Email: sumon3011@gmail.com</p> <br />
                   <span>FIND WITH ME</span>
                   <div className="button f_flex">

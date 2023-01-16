@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Card.css";
 // import Project from "./Project";
 
@@ -13,9 +13,9 @@ const Card = (props) => {
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
         <button className="explore_btn">
-          <Link props={props} to={`${props.project}`}>
+          <a href={props.project}>
             Explore More
-          </Link>{" "}
+          </a>{" "}
         </button>
         
       </div>

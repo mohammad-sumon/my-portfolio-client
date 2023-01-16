@@ -2,7 +2,7 @@ import React from "react";
 import "./Features.css";
 import data from "./Features-Api";
 import Card from "./Card";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import Project from "./Project";
 
 const Features = () => {
@@ -18,16 +18,17 @@ const Features = () => {
           <div className="contents grid">
             {data.map((val, index) => {
               return (
-                <Link to={`${val.project}`}>
+                <a href={`${val.project}`}>
                   <Card
                     key={index}
                     image={val.image}
                     title={val.title}
                     desc={val.desc}
                     id={val.id}
+                    project={val.project}
                     val={val}
                   />
-                </Link>
+                </a>
               );
             })}
           </div>

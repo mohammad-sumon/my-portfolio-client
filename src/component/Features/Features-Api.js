@@ -14,15 +14,15 @@ const data = [
     id: 2,
     image: "https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     title: "SAM Kitchen",
-    desc: "This is a website of food lovers. All items are homemade and maintain hyzienic.",
-    project: "https://used-products-resale-cli-8eb57.web.app/"
+    desc: "This is a website of food lovers. All items are homemade and maintain hyzienic. You also get free home delivery.",
+    project: "https://sam-kitchen-client.web.app/"
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1553778263-73a83bab9b0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
-    title: "Choose Five Legend",
-    desc: "From this webiste you can choose your best five football legend. You also can calculate your budget.",
-    project: "https://used-products-resale-cli-8eb57.web.app/"
+    image: "https://images.unsplash.com/photo-1534665482403-a909d0d97c67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    title: "Expert Programmer",
+    desc: "From this webiste you can choose your best programming languages. You also find beginner to advance level tutorial.",
+    project: "https://expert-programmer-client.firebaseapp.com/"
   },
   
 ]

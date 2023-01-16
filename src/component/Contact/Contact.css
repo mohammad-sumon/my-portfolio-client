@@ -50,4 +50,8 @@
     width: 100%;
     margin-top: 50px;
   }
+  .img img{
+    display: block;
+    margin: 0 auto;
+  }
 }

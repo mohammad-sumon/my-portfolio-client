@@ -9,7 +9,7 @@ const Footer = () => {
       }}>
         <div className='conatiner text-center top'>
          
-          <p>© 2022. All rights reserved by Mohammad Sumon.</p>
+          <p>© 2023. All rights reserved by Mohammad Sumon.</p>
         </div>
       </footer>
     </>
