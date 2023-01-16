@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Card.css";
-import Project from "./Project";
+// import Project from "./Project";
 
 const Card = (props) => {
   console.log(props);
+  console.log(props.project);
   return (
     <div className="card_container">
       <div className="boxs btn_shadow">
@@ -12,7 +13,7 @@ const Card = (props) => {
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
         <button className="explore_btn">
-          <Link props={props} to={`/project/${props.id}`}>
+          <Link props={props} to={`${props.project}`}>
             Explore More
           </Link>{" "}
         </button>

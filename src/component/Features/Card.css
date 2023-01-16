@@ -1,3 +1,7 @@
+.boxs{
+    height: 450px;
+    margin: 10px;
+}
 .boxs img{
     width: 100%;
 }

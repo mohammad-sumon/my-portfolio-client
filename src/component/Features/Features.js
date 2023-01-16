@@ -3,7 +3,7 @@ import "./Features.css";
 import data from "./Features-Api";
 import Card from "./Card";
 import { Link } from "react-router-dom";
-import Project from "./Project";
+// import Project from "./Project";
 
 const Features = () => {
   return (
@@ -18,7 +18,7 @@ const Features = () => {
           <div className="contents grid">
             {data.map((val, index) => {
               return (
-                <Link to={`/project/${val.id}`}>
+                <Link to={`${val.project}`}>
                   <Card
                     key={index}
                     image={val.image}
